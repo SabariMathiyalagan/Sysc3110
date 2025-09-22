@@ -24,6 +24,17 @@ public class AddressBook {
             System.out.println("Buddy not found: " + buddy.getName());
         }
     }
+    // Method to print all buddies in the address book
+    public void printBuddyList() {
+        if (buddies.isEmpty()) {
+            System.out.println("The address book is empty.");
+        } else {
+            System.out.println("Buddy List:");
+            for (BuddyInfo buddy : buddies) {
+                System.out.println(buddy.getName() + " - " + buddy.getPhoneNumber());
+            }
+        }
+    }
 
 
     public static void main(String[] args) {
