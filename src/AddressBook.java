@@ -25,15 +25,9 @@ public class AddressBook {
         }
     }
 
-    // Method to display all buddies in the address book
-    public void displayBuddies() {
-        System.out.println("Address Book:");
-        for (BuddyInfo buddy : buddies) {
-            System.out.println(buddy);
-        }
-    }
+
     public static void main(String[] args) {
-        BuddyInfo buddy = new BuddyInfo("Tom", "Carleton", "613");
+        BuddyInfo buddy = new BuddyInfo("Amiran", "Carleton", "613");
         AddressBook addressBook = new AddressBook();
         addressBook.addBuddy(buddy);
         addressBook.removeBuddy(buddy);
